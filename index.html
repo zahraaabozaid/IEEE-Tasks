@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Event Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Campus Event Finder</h1>
+        <p>Discover events happening on your campus!</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#events">Events</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <h2>Welcome to Campus Event Finder</h2>
+
+            <p>
+                Find workshops, sports activities, and social events
+                happening at your university.
+            </p>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Campus Events</h2>
+
+            <label for="categoryFilter">
+                Filter events by category:
+            </label>
+
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="workshop">Workshop</option>
+                <option value="sports">Sports</option>
+                <option value="social">Social</option>
+            </select>
+
+            <div id="eventsList"></div>
+
+            <p id="noEventsMessage" hidden>
+                No events found in this category.
+            </p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+
+            <p>
+                Campus Event Finder helps university students discover
+                activities and connect with their campus community.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Campus Event Finder. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
